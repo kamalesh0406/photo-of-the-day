@@ -1,0 +1,13 @@
+  {
+    "name": "National Geographic Image",
+    "version": "1.0",
+    "description": "This extension changes your new tab background to the National Geographic Picture of the Day",
+    "manifest_version": 2,
+    "chrome_url_overrides" : {
+    "newtab": "index.html"
+  	},
+  	"permissions": [
+    "*://*.nationalgeographic.com/*"
+	],
+  	"content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+  }
